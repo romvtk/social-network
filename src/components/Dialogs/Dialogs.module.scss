@@ -1,0 +1,24 @@
+.dialogs__wrapper {
+    // display: flex;
+    // align-items: center;
+    // justify-items: center;
+    // justify-content: space-around;
+
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+
+
+
+.dialogs {
+    border-right: 1px solid black;
+    margin-right: 20px;
+}
+
+.dialog {
+    padding: 10px;
+}
+
+.message {
+    padding: 10px;
+}

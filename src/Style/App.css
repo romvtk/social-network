@@ -12,7 +12,7 @@ ul,
 li {
   list-style-type: none; }
 
-.app-wrapper {
+.app__wrapper {
   margin: 0 auto;
   max-width: 1170px;
   display: grid;
@@ -20,5 +20,11 @@ li {
   grid-template-rows: 40px 1fr;
   grid-template-columns: 1fr 5.5fr;
   /* grid-gap: 10px; */ }
+
+.app__wrapper-content {
+  margin-top: 17px;
+  border-top-right-radius: 20px;
+  background-color: #edeef0;
+  grid-area: c; }
 
 /*# sourceMappingURL=App.css.map */

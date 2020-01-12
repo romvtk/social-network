@@ -1,18 +1,25 @@
-.nav__profile {
+.nav {
   background: #edeef0;
   grid-area: n;
   padding-top: 17px;
   height: 100vh; }
-  .nav__profile li {
-    padding: 10px 0 10px 10px;
-    font-size: 16px;
-    font-weight: 600;
-    width: 80%; }
-    .nav__profile li:hover {
-      background-color: #e1e5eb; }
-    .nav__profile li:last-child {
-      margin-top: 50px; }
-  .nav__profile a {
-    color: #285473; }
+
+.item {
+  padding: 10px 0 10px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 80%; }
+  .item:hover {
+    background-color: #e1e5eb; }
+  .item:last-child {
+    margin-top: 50px; }
+
+.active {
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding-left: 10px; }
+
+a {
+  color: #285473; }
 
 /*# sourceMappingURL=Navbar.module.css.map */

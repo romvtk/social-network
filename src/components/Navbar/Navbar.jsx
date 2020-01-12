@@ -1,17 +1,60 @@
 import React from 'react';
 import style from './Navbar.module.css';
+import { NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
+
+
     return (
-        <nav className={style.nav__profile}>
-            <ul>
-                <li><a href='#'>Профиль</a></li>
-                <li><a href='#'>Сообщения</a></li>
-                <li><a href='#'>Новости</a></li>
-                <li><a href='#'>Музыка</a></li>
-                <li><a href='#'>Настройки</a></li>
-            </ul>
+        <nav className={style.nav}>
+
+            <div className={style.item} >
+                <NavLink  
+                  
+                  isActive={(_, location) => location.pathname == '/' ||location.pathname == '/profile'}
+                  activeClassName={style.active}
+                    to="/profile">
+                    Профиль
+                </NavLink>
+            </div>
+
+            <div className={style.item}>
+                <NavLink  
+                   isActive={(_, location) => location.pathname == '/dialogs'}
+                   activeClassName={style.active}
+                  
+                    to="/dialogs">
+                    Сообщения
+                </NavLink>
+            </div>
+
+            <div className={style.item}>
+                <NavLink  
+                    to='/news'
+                    isActive={(_, location) => location.pathname == '/news'}
+                    activeClassName={style.active}>
+                    Новости
+                </NavLink>
+            </div>
+
+            <div className={style.item}>
+                <NavLink  
+                    to='/music'
+                    isActive={(_, location) => location.pathname == '/music'}
+                    activeClassName={style.active}>
+                    Музыка
+                </NavLink>
+            </div>
+
+            <div className={style.item}>
+                <NavLink  
+                    to='/settings'
+                    isActive={(_, location) => location.pathname == '/settings'}
+                    activeClassName={style.active}>
+                    Настройки
+                </NavLink>
+            </div>
         </nav>
     )
 }
