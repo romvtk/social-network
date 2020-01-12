@@ -1,0 +1,14 @@
+.content {
+  margin-top: 17px;
+  border-top-right-radius: 20px;
+  background-color: #dbf5bd;
+  grid-area: c; }
+
+.img__profile {
+  height: 170px; }
+  .img__profile img {
+    height: 100%;
+    width: 100%;
+    background-size: cover; }
+
+/*# sourceMappingURL=Profile.module.css.map */

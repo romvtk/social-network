@@ -1,0 +1,17 @@
+
+.content {
+    margin-top: 17px;
+    border-top-right-radius: 20px;
+    background-color: rgb(219, 245, 189);
+    grid-area: c;
+}
+
+.img__profile {
+    height: 170px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+    }
+}

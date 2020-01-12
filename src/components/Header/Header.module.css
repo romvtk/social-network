@@ -1,0 +1,11 @@
+.header {
+  position: relative;
+  background-color: #4a76a8;
+  border-bottom-left-radius: 20px;
+  grid-area: h; }
+  .header img {
+    position: absolute;
+    left: 20px;
+    width: 35px; }
+
+/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #edeef0; }
+
+a {
+  text-decoration: none; }
+
+ul,
+li {
+  list-style-type: none; }
+
+.app-wrapper {
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-areas: 'h h' 'n c';
+  grid-template-rows: 40px 1fr;
+  grid-template-columns: 1fr 5.5fr;
+  /* grid-gap: 10px; */ }
+
+/*# sourceMappingURL=App.css.map */

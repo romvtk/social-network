@@ -1,0 +1,13 @@
+.header {
+    position: relative;
+    background-color: #4a76a8;
+
+    border-bottom-left-radius: 20px;
+    grid-area: h;
+
+    img {
+        position: absolute;
+        left: 20px;
+        width: 35px;
+    }
+}
