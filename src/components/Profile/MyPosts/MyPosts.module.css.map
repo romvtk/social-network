@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,eAAe;EACX,OAAO,EAAE,IAAI;;AAGb,WAAW;EACP,OAAO,EAAE,MAAO;;AAIpB,aAAa;EACT,KAAK,EAAE,IAAI;EACX,sBAAQ;IACJ,MAAM,EAAE,IAAI;IACZ,KAAK,EAAE,GAAG;IACV,MAAM,EAAE,KAAK",
+"sources": ["MyPosts.module.scss"],
 "names": [],
 "file": "MyPosts.module.css"
 }

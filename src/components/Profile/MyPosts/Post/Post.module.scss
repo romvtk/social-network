@@ -1,8 +1,19 @@
 .post{
-  
+  padding-bottom: 45px;
+
     img{
-        width: 85px;
+        width: 65px;
         border-radius: 50%;
     }
    
+}
+
+.post__item{
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.post__message{
+    margin: auto 0;
+    padding-left: 20px;
 }

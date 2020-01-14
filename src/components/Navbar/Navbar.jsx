@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className={style.item} >
                 <NavLink  
                   
-                  isActive={(_, location) => location.pathname == '/' ||location.pathname == '/profile'}
+                  isActive={(_, location) =>location.pathname == '/profile'}
                   activeClassName={style.active}
                     to="/profile">
                     Профиль

@@ -1,5 +1,15 @@
-.post img {
-  width: 85px;
-  border-radius: 50%; }
+.post {
+  padding-bottom: 45px; }
+  .post img {
+    width: 65px;
+    border-radius: 50%; }
+
+.post__item {
+  display: flex;
+  padding-bottom: 10px; }
+
+.post__message {
+  margin: auto 0;
+  padding-left: 20px; }
 
 /*# sourceMappingURL=Post.module.css.map */
