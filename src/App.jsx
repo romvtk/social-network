@@ -18,12 +18,21 @@ const App = (props) => {
         <Navbar />
         <div className="app__wrapper-content">
 
-          <Route path='/profile' render={() => <Profile posts={props.state.posts} />} />
-          <Route path='/dialogs' render={() => <Dialogs dialogs={props.state.dialogs} messages={props.state.messages}/>} />
-          <Route path='/news' render={() => <News />} />
-          <Route path='/music' render={() => <Music />} />
+          <Route path='/profile' render={() =>
+            <Profile posts={props.state.profilePage} />} />
 
-          <Route path='/settings' render={() => <Settings />} />
+          <Route path='/dialogs' render={() =>
+            <Dialogs messagesPage={props.state.messagesPage} />} />
+
+          <Route path='/news' render={() =>
+            <News />} />
+
+          <Route path='/music' render={() =>
+            <Music />} />
+
+
+          <Route path='/settings' render={() =>
+            <Settings />} />
         </div>
       </div>
     </BrowserRouter>
