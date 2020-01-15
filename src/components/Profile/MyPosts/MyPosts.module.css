@@ -9,6 +9,7 @@
   .MyPost__text textarea {
     resize: none;
     width: 45%;
-    height: 100px; }
+    height: 100px;
+    padding: 7px; }
 
 /*# sourceMappingURL=MyPosts.module.css.map */
