@@ -12,9 +12,8 @@ const MyPosts = (props) => {
     let newPostElement = React.createRef();
 
     let onAddPost = () => {
-         props.addPost();
-        
-
+        if (newPostElement.current.value)
+            props.addPost();
     }
 
     let onPostChange = () => {
@@ -35,7 +34,8 @@ const MyPosts = (props) => {
                         required
                         cols="25"
                         rows="3"
-                        value={props.newPostText} />
+                        value={props.newPostText}
+                        placeholder='Введите сообщение' />
 
                 </div>
                 <div className={style.btn}>

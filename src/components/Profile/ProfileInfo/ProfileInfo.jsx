@@ -4,12 +4,12 @@ import style from './ProfileInfo.module.css';
 
 const ProfileInfo = () => {
     return (
-        <div>
+        <div className ={style.description_block}>
             <div className={style.img__profile}>
-                <img src="https://million-wallpapers.ru/wallpapers/5/25/336904166940081/exagons.jpg" alt="" />
+            ava
             </div>
             <div className={style.description}>
-                ava + description
+                description
             </div>
 
         </div>
