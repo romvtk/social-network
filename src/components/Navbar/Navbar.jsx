@@ -49,6 +49,15 @@ const Navbar = () => {
 
             <div className={style.item}>
                 <NavLink  
+                    to='/users'
+                    isActive={(_, location) => location.pathname == '/users'}
+                    activeClassName={style.active}>
+                    Пользователи
+                </NavLink>
+            </div>
+
+            <div className={style.item}>
+                <NavLink  
                     to='/settings'
                     isActive={(_, location) => location.pathname == '/settings'}
                     activeClassName={style.active}>

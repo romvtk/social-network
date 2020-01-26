@@ -1,0 +1,30 @@
+.profile__avatar {
+  border-radius: 7px;
+  padding: 15px;
+  background-color: #fff; }
+
+.page_actions_wide {
+  padding-top: 10px;
+  display: flex;
+  font-size: 12.5px; }
+
+.page_action_left {
+  background-color: #e5ebf1;
+  width: 155px;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 5px; }
+
+.page_action_right {
+  position: relative;
+  background-color: #e5ebf1;
+  border-radius: 5px;
+  margin-left: 7px;
+  padding: 8px; }
+  .page_action_right div {
+    padding: 8px 10px 8px;
+    background-image: url(./../../../../img/dots.png);
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+/*# sourceMappingURL=ProfileAvatar.module.css.map */

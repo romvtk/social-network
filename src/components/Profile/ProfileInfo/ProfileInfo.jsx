@@ -1,16 +1,14 @@
 import React from 'react';
 import style from './ProfileInfo.module.css';
+import ProfileAvatar from './ProfileAvatar/ProfileAvatar';
+import ProfileDescription from './ProfileDescription/ProfileDescription';
 
 
 const ProfileInfo = () => {
     return (
         <div className ={style.description_block}>
-            <div className={style.img__profile}>
-            ava
-            </div>
-            <div className={style.description}>
-                description
-            </div>
+          <ProfileAvatar/>
+           <ProfileDescription/>
 
         </div>
     )

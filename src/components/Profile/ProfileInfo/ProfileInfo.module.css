@@ -1,4 +1,6 @@
 .description_block {
-  display: flex; }
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%; }
 
 /*# sourceMappingURL=ProfileInfo.module.css.map */
