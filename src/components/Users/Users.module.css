@@ -6,6 +6,9 @@
   width: 550px;
   border-radius: 5px; }
 
+.selectedPage {
+  font-weight: 700; }
+
 .user_row {
   position: relative;
   padding: 12px 0px;
