@@ -1,0 +1,48 @@
+.description_block {
+  border-radius: 7px;
+  background-color: #fff;
+  margin-left: 15px; }
+
+.description_info_wrap {
+  min-width: 560px;
+  padding: 15px 20px; }
+
+.description_top {
+  border-bottom: 1px solid #e7e8ec;
+  padding: 0 0 15px; }
+
+.description_top__profile_online {
+  float: right;
+  font-weight: 400;
+  font-size: 12.5px;
+  color: #939393; }
+
+.description_name {
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: 500;
+  margin: 0px 0 0px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 1px;
+  color: #000; }
+
+.description_current_info {
+  font-size: 13px; }
+
+.description_info_short {
+  padding-top: 10px;
+  line-height: 150%; }
+
+.description_info_row {
+  padding-top: 5px;
+  font-size: 13px; }
+  .description_info_row .label {
+    float: left;
+    width: 165px;
+    color: #828282; }
+  .description_info_row .labled {
+    overflow: hidden;
+    text-overflow: ellipsis; }
+
+/*# sourceMappingURL=ProfileDescription.module.css.map */

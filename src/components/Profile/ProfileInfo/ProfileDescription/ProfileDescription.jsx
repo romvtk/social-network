@@ -1,8 +1,10 @@
 import React from 'react';
 import style from './ProfileDescription.module.css';
+import ProfileStatus from "./ProfileStatus/ProfileStatus";
 
 
-const ProfileDescription = () => {
+const ProfileDescription = (props) => {
+    console.log(props)
     return (
 
         <div className={style.description_block}>
@@ -10,7 +12,7 @@ const ProfileDescription = () => {
                 <div className={style.description_top}>
                     <div className={style.description_top__profile_online}>Online</div>
                     <h1 className={style.description_name}>{`Иван Гриценко`}</h1>
-                    <div className={style.description_current_info}>{`Здесь располагается статус`}</div>
+                    <ProfileStatus aboutMe={props.profile.aboutMe}/>
                 </div>
 
                 <div className={style.description_info_short}>

@@ -6,17 +6,21 @@ import Preloader from '../../common/Preloader/Preloader';
 
 
 const ProfileInfo = (props) => {
-if (!props.profile) {
-    return <Preloader/>
-}
 
-    return (
-        <div className ={style.description_block}>
-          <ProfileAvatar photo={props.profile.photos.large} />
-           <ProfileDescription/>
 
-        </div>
-    )
+
+    if (!props.profile) {
+        return <Preloader/>
+    } else {
+
+        return (
+            <div className={style.description_block}>
+                <ProfileAvatar photo={props.profile.photos.large}/>
+                <ProfileDescription profile = {props.profile}/>
+
+            </div>
+        )
+    }
 }
 
 

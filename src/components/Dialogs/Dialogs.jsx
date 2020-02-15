@@ -3,43 +3,43 @@ import style from './Dialogs.module.css';
 
 import DialogItem from './DialogItem/DialogItem';
 import Message from './Message/Message';
-import { updateNewMessageBodyCreator, sendMessageCreator } from './../../redux/dialogs-reducer';
+import {updateNewMessageBodyCreator, sendMessageCreator} from './../../redux/dialogs-reducer';
+import Redirect from "react-router-dom/es/Redirect";
 
 
 const Dialogs = (props) => {
 
-    let state = props.messagesPage
+    let state = props.messagesPage;
 
     let dialogsElements = state.dialogs
         .map(dialog => <DialogItem
             name={dialog.name}
             id={dialog.id}
-            key ={dialog.id}
-        />)
-
-
+            key={dialog.id}
+        />);
 
 
     let messagesElements = (state.messages)
         .map(message => <Message
             message={message.message}
-            key={message.id} />)
+            key={message.id}/>);
 
     let newMessageBody = state.newMessageBody;
 
 
     let onSendMessageClick = () => {
-        if (newMessageBody){
-        props.sendMessage()
+        if (newMessageBody) {
+            props.sendMessage()
         }
-    }
+    };
 
 
     let onNewMessageChange = (e) => {
         let body = e.target.value;
         props.updateNewMessageBody(body)
+    };
 
-    }
+    if (!props.isAuth ) return <Redirect to={'/login'}/>
 
     return (
         <div className={style.dialogs__wrapper}>
@@ -58,7 +58,9 @@ const Dialogs = (props) => {
                     >
                     </textarea>
                 </div>
-                <div><button onClick={onSendMessageClick}>Отправить</button></div>
+                <div>
+                    <button onClick={onSendMessageClick}>Отправить</button>
+                </div>
 
 
             </div>

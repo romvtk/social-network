@@ -7,7 +7,7 @@ const DialogItem = (props) => {
         <div className={style.dialog}>
             <NavLink
                 to={"/dialogs/" + props.id}
-                isActive={(_, location) => location.pathname == `/dialogs/" + ${props.id} `}
+                isActive={(_, location) => location.pathname === `/dialogs/" + ${props.id} `}
                 activeClassName={style.active}
             >
                 {props.name}
