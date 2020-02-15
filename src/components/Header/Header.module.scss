@@ -1,13 +1,27 @@
 .header {
-    position: relative;
     background-color: #4a76a8;
-
     border-bottom-left-radius: 20px;
     grid-area: h;
 
     img {
-    
-        left: 15px;
+        padding-left: 15px;
         width: 35px;
+    }
+}
+
+.loginBlock {
+    float: right;
+    padding-right: 15px;
+    padding-top: 7px;
+    ;
+
+    a {
+        color: #fff;
+        transition: .4s;
+
+        &:hover {
+            color: chocolate;
+            transition: .4s;
+        }
     }
 }

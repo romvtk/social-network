@@ -2,6 +2,8 @@
   border-radius: 7px;
   padding: 15px;
   background-color: #fff; }
+  .profile__avatar img {
+    width: 100%; }
 
 .page_actions_wide {
   padding-top: 10px;

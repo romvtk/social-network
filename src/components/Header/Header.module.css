@@ -1,11 +1,20 @@
 .header {
-  position: relative;
   background-color: #4a76a8;
   border-bottom-left-radius: 20px;
   grid-area: h; }
   .header img {
-    position: absolute;
-    left: 20px;
+    padding-left: 15px;
     width: 35px; }
 
-/*# sourceMappingURL=Header.css.map */
+.loginBlock {
+  float: right;
+  padding-right: 15px;
+  padding-top: 7px; }
+  .loginBlock a {
+    color: #fff;
+    transition: .4s; }
+    .loginBlock a:hover {
+      color: chocolate;
+      transition: .4s; }
+
+/*# sourceMappingURL=Header.module.css.map */

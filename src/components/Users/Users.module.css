@@ -6,6 +6,9 @@
   width: 550px;
   border-radius: 5px; }
 
+.users_list span {
+  cursor: pointer; }
+
 .selectedPage {
   font-weight: 700; }
 
